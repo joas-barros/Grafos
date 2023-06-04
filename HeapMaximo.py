@@ -64,10 +64,7 @@ class Heapmax:
 
     def tamanho(self):
         t = log2(self.nos)
-        if t == int(t):
-            return t + 1
-        else:
-            return int(t) + 1
+        return int(t) + 1
 
     def elemento_raiz(self):
         if self.nos != 0:

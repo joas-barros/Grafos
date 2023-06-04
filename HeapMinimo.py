@@ -35,7 +35,7 @@ class Heapmin(Heapmax):
             if filho + 1 <= self.nos:
                 if self.heap[filho] < self.heap[filho - 1]: # < se for minimo
                     filho += 1
-            if self.heap[pai - 1] >= self.heap[filho - 1]:
+            if self.heap[pai - 1] <= self.heap[filho - 1]:
                 break
             else:
                 self.heap[filho - 1], self.heap[pai - 1] = self.heap[pai - 1], self.heap[filho - 1]
