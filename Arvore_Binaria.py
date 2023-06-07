@@ -1,4 +1,4 @@
-class no:
+class No:
 
     def __int__(self, valor):
         self.valor = valor
